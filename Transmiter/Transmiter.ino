@@ -4,8 +4,8 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-#define CE_PIN 7
-#define CSN_PIN 8
+#define CE_PIN 9
+#define CSN_PIN 10
 
 const uint64_t pipeOut = 0xE9E8F0F0E1LL;   //IMPORTANT: The same as in the receiver 0xE9E8F0F0E1LL | Bu adres alıcı ile aynı olmalı
 RF24 radio(CE_PIN, CSN_PIN); // select CE,CSN pin | CE ve CSN pinlerin seçimi
